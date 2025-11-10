@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Masa Depan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔮 Kalkulator Masa Depan</h1>
+            <p>Seberapa 'kaya' Anda di masa depan? Jujur tentang jajan hari ini!</p>
+        </header>
+
+        <section class="input-section">
+            <label for="uangJajan">Masukkan Nominal Uang Jajan Harian (Rp):</label>
+            <input type="number" id="uangJajan" placeholder="Contoh: 25000">
+            <button id="hitungButton">Hitung Potensi 'Kaya'!</button>
+        </section>
+
+        <section class="result-section hidden">
+            <h2>💰 Potensi Masa Depan Anda</h2>
+            <div class="result-card">
+                <h3>Minimal Pengeluaran Harian (30%)</h3>
+                <p id="minPengeluaran" class="data-value"></p>
+            </div>
+
+            <div class="result-grid">
+                <div class="result-card tabungan-card">
+                    <h4>Tabungan per Minggu</h4>
+                    <p id="tabunganMinggu" class="data-value"></p>
+                </div>
+                <div class="result-card tabungan-card">
+                    <h4>Tabungan per Bulan</h4>
+                    <p id="tabunganBulan" class="data-value"></p>
+                </div>
+                <div class="result-card tabungan-card annual-card">
+                    <h4>Total Tabungan per Tahun!</h4>
+                    <p id="tabunganTahun" class="data-value"></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kalkulator Masa Depan | Hitung Cerdas, Hidup Tenang.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
